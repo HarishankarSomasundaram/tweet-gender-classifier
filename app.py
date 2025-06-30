@@ -26,8 +26,8 @@ bert_model = BertModel.from_pretrained('bert-base-uncased').to(device)
 bert_model.eval()
 
 # Load pre-trained models
-logreg_model = joblib.load('logistic_regression_model.pkl')
-calibrator_model = joblib.load('calibrator_model.pkl')
+logreg_model = joblib.load('logistic_regression_model_v4.pkl')
+calibrator_model = joblib.load('calibrator_model_v4.pkl')
 
 # Preprocessing function for tweets
 def cleaner(tweet):
@@ -75,7 +75,7 @@ def home():
     return render_template('index.html')
 
 # Prediction route for form submission
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['POST'])    
 def predict():
     tweet = request.form.get('tweet', '')
     if not tweet:

@@ -1,17 +1,34 @@
-Flask==2.0.1
-gunicorn==20.1.0
-torch==2.0.1
-transformers==4.9.2
-scikit-learn==0.24.2
-joblib==1.0.1
-beautifulsoup4==4.9.3
-lxml==4.6.3
-nltk==3.6.2
-werkzeug==2.0.3
-numpy==1.21.6
-six==1.16.0
-requests==2.26.0
-filelock==3.4.0
-tqdm==4.62.3
-regex==2021.11.10
-sacremoses==0.0.46
+# Flask==2.0.1
+# gunicorn==20.1.0
+# torch==2.0.1
+# transformers==4.9.2
+# scikit-learn==0.24.2
+# joblib==1.0.1
+# beautifulsoup4==4.9.3
+# lxml==4.6.3
+# nltk==3.6.2
+# werkzeug==2.0.3
+# numpy==1.21.6
+# six==1.16.0
+# requests==2.26.0
+# filelock==3.4.0
+# tqdm==4.62.3
+# regex==2021.11.10
+# sacremoses==0.0.46
+flask
+gunicorn
+scikit-learn
+joblib
+transformers
+torch
+nltk
+numpy
+werkzeug
+beautifulsoup4
+lxml 
+six
+requests
+filelock
+tqdm
+regex
+sacremoses

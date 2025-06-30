@@ -26,8 +26,8 @@ bert_model = BertModel.from_pretrained('bert-base-uncased').to(device)
 bert_model.eval()
 
 # Load pre-trained models
-logreg_model = joblib.load('logistic_regression_model_v4.pkl')
-calibrator_model = joblib.load('calibrator_model_v4.pkl')
+logreg_model = joblib.load('logistic_regression_model_v4.pkl', mmap_mode=None)
+calibrator_model = joblib.load('calibrator_model_v4.pkl', mmap_mode=None)
 
 # Preprocessing function for tweets
 def cleaner(tweet):

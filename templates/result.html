@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1 { color: #333; }
+        a { color: #007bff; }
+    </style>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% else %}
+        <p><strong>X post:</strong> {{ tweet }}</p>
+        <p><strong>Predicted Gender:</strong> {{ gender }}</p>
+        <p><strong>Probability (Male):</strong> {{ "%.2f" % (prob * 100) }}%</p>
+    {% endif %}
+    <a href="/">Back</a>
+</body>
+</html>
